@@ -1,5 +1,3 @@
-# ![LiUU Liquidity](/public/images/logo-small.png)
-
 # Getting started
 
 ## Installation
