@@ -1,0 +1,122 @@
+/* STRIPE CHECKOUT */
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  box-sizing: border-box;
+  width:100%;
+  height: 45px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #dae1e7;
+  border-radius: 4px;
+  background-color: white;
+
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+#campaign_description{
+  margin-top:20px
+}
+
+#campaign_description #text_crop.collapse:not(.show) {
+  display: block;
+  height:6rem;
+  overflow: hidden;
+}
+
+#campaign_description #text_crop.collapsing {
+  height: 6rem;
+}
+
+#campaign_description a.collapsed::after {
+  content: '+ Show More';
+}
+
+#campaign_description a:not(.collapsed)::after {
+  content: '- Show Less';
+}
+
+@media (max-width: 767px) {
+  header .language-selector > a  {
+    font-size:0;
+  }
+}
+@media (max-width: 400px) {
+    .button-mobile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .dropdown-head .dropdown-menu.show {
+        display: block !important
+    }
+}
+
+.card-text{
+  word-break: break-all;
+}
+.cz-carousel .tns-controls button {
+    top:38% !important;
+}
+.cz-carousel.cz-controls-outside [data-controls='prev']
+{
+    left:-20px !important;
+}
+.cz-carousel.cz-controls-outside [data-controls='next']
+{
+    right:-20px !important;
+}
+
+/* Language selector */
+@media (max-width: 374px){
+    .lang-dropdown {
+        padding-right: 0 !important;
+    }
+}
+@media (max-width: 350px){
+    .ml-lang {
+        margin-left: .25rem !important;
+    }
+    .lang-dropdown {
+        padding-left: 0 !important;
+    }
+}
+
+/* Breadcrumbs */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "» ";
+    vertical-align: top;
+}
+
+/* Theme extension */
+
+@media (min-width: 992px) {
+    .mt-lg-n12, .my-lg-n12 {
+        margin-top: -12em !important;
+    }
+}
+@media (min-width: 996px) {
+    .hero-home {
+        background-repeat: no-repeat !important;
+        background-position: center top !important;
+        background-image: url("/images/hero.png");
+    }
+}
